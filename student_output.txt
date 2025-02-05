@@ -1,0 +1,121 @@
+Script started on Sun 10 Apr 2022 10:33:38 PM EDT
+==63680== Memcheck, a memory error detector
+==63680== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==63680== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==63680== Command: ms
+==63680== 
+Aid Management System
+Date: 2022/03/31
+Data file: No file
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 1
+
+****New/Open Aid Database****
+Enter file name: data.dat
+6 records loaded!
+
+Aid Management System
+Date: 2022/03/31
+Data file: data.dat
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 1
+
+****List Items****
+ ROW |  SKU  | Description                         | Have | Need |  Price  | Expiry
+-----+-------+-------------------------------------+------+------+---------+-----------
+   1 | 12113 | Hydrogen peroxide 100ml bottles     |  275 |  300 |    3.99 |*2023/11/11
+   2 | 45678 | Sleeping Bags                       |  100 |  200 |   65.66 |
+   3 | 56789 | Tents and Blankets and pillows Tent | 2000 | 2000 |   65.66 |
+   4 | 44444 | Flash lights                        |  400 |  400 |   65.66 |
+   5 | 12345 | Baby Formula                        |  145 |  200 |   33.99 | 2022/12/12
+   6 | 11223 | Enfamil A+                          |   38 |   38 |   38.99 |*2022/11/11
+-----+-------+-------------------------------------+------+------+---------+-----------
+Enter row number to display details or <ENTER> to continue:
+> 
+
+Aid Management System
+Date: 2022/03/31
+Data file: data.dat
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 1
+
+****List Items****
+ ROW |  SKU  | Description                         | Have | Need |  Price  | Expiry
+-----+-------+-------------------------------------+------+------+---------+-----------
+   1 | 12113 | Hydrogen peroxide 100ml bottles     |  275 |  300 |    3.99 |*2023/11/11
+   2 | 45678 | Sleeping Bags                       |  100 |  200 |   65.66 |
+   3 | 56789 | Tents and Blankets and pillows Tent | 2000 | 2000 |   65.66 |
+   4 | 44444 | Flash lights                        |  400 |  400 |   65.66 |
+   5 | 12345 | Baby Formula                        |  145 |  200 |   33.99 | 2022/12/12
+   6 | 11223 | Enfamil A+                          |   38 |   38 |   38.99 |*2022/11/11
+-----+-------+-------------------------------------+------+------+---------+-----------
+Enter row number to display details or <ENTER> to continue:
+> 5
+Perishable AMA Item:
+12345: Baby Formula
+Quantity Needed: 200
+Quantity Available: 145
+Unit Price: $33.99
+Needed Purchase Fund: $1869.45
+Expiry date: 2022/12/12
+
+
+Aid Management System
+Date: 2022/03/31
+Data file: data.dat
+---------------------------------
+1- List Items
+2- Add Item
+3- Remove Item
+4- Update Quantity
+5- Sort
+6- Ship Items
+7- New/Open Aid Database
+---------------------------------
+0- Exit
+> 0
+Exiting Program!
+File: data.dat
+12113	Hydrogen peroxide 100ml bottles	275	300	3.99	Keep away from direct sunlight	231111
+45678	Sleeping Bags	100	200	65.66
+56789	Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows Tents and Blankets and pillows 	2000	2000	65.66
+44444	Flash lights	400	400	65.66
+12345	Baby Formula	145	200	33.99		221212
+11223	Enfamil A+	38	38	38.99	Keep in a dry and cool place	221111
+==63680== 
+==63680== HEAP SUMMARY:
+==63680==     in use at exit: 0 bytes in 0 blocks
+==63680==   total heap usage: 38 allocs, 38 frees, 118,295 bytes allocated
+==63680== 
+==63680== All heap blocks were freed -- no leaks are possible
+==63680== 
+==63680== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Sun 10 Apr 2022 10:34:20 PM EDT

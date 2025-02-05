@@ -1,0 +1,14 @@
+In line number 23 of your output:
+The output should be:
+Enter file name: data.dat
+                 ^
+But your output is: 
+Enter file name: 2
+                 ^
+
+Unmatched character details:
+The character in column 18 is supposed to be:
+  [d] ASCII code(100)
+but you printed
+  [2] ASCII code(50)
+
